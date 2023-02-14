@@ -1,0 +1,6 @@
+cc.wan7.bear.common.core.config.TaskExecutorConfiguration
+cc.wan7.bear.common.core.config.JacksonConfiguration
+cc.wan7.bear.common.core.config.RedisTemplateConfiguration
+cc.wan7.bear.common.core.config.RestTemplateConfiguration
+cc.wan7.bear.common.core.util.SpringContextHolder
+cc.wan7.bear.common.core.config.WebMvcConfiguration

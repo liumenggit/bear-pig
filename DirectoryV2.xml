@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <trees>
+     <tree path="/demo/demo-biz/src/main/java/cc/wan7/bear/demo/service/impl" title="实现类"/>
+     <tree path="/demo/demo-biz/src/main/java/cc/wan7/bear/demo/mapper" title="DAO"/>
+ </trees>

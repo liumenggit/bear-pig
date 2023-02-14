@@ -1,0 +1,3 @@
+cc.wan7.bear.common.feign.BearFeignAutoConfiguration
+cc.wan7.bear.common.feign.sentinel.SentinelAutoConfiguration
+cc.wan7.bear.common.feign.sentinel.handle.GlobalBizExceptionHandler

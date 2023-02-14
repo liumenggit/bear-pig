@@ -1,0 +1,7 @@
+cc.wan7.bear.admin.api.feign.RemoteClientDetailsService
+cc.wan7.bear.admin.api.feign.RemoteDictService
+cc.wan7.bear.admin.api.feign.RemoteDeptService
+cc.wan7.bear.admin.api.feign.RemoteLogService
+cc.wan7.bear.admin.api.feign.RemoteTokenService
+cc.wan7.bear.admin.api.feign.RemoteUserService
+cc.wan7.bear.admin.api.feign.RemoteParamService

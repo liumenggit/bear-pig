@@ -1,0 +1,90 @@
+version: '3'
+services:
+  bear-mysql:
+    build:
+      context: ./db
+    environment:
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    container_name: bear-mysql
+    image: bear-mysql
+
+  bear-redis:
+    image: redis:7.0.0
+    restart: always
+    container_name: bear-redis
+    hostname: bear-redis
+
+  bear-register:
+    build:
+      context: ./bear-register
+    restart: always
+    ports:
+      - 8848:8848
+    container_name: bear-register
+    hostname: bear-register
+    image: bear-register
+
+  bear-gateway:
+    build:
+      context: ./bear-gateway
+    restart: always
+    ports:
+      - 9999:9999
+    container_name: bear-gateway
+    hostname: bear-gateway
+    image: bear-gateway
+
+  bear-auth:
+    build:
+      context: ./bear-auth
+    restart: always
+    container_name: bear-auth
+    hostname: bear-auth
+    image: bear-auth
+
+  bear-upms:
+    build:
+      context: ./bear-upms/bear-upms-biz
+    restart: always
+    container_name: bear-upms
+    hostname: bear-upms
+    image: bear-upms
+
+  bear-monitor:
+    build:
+      context: ./bear-visual/bear-monitor
+    restart: always
+    ports:
+      - 5001:5001
+    container_name: bear-monitor
+    hostname: bear-monitor
+    image: bear-monitor
+
+  bear-sentinel:
+    build:
+      context: ./bear-visual/bear-sentinel-dashboard
+    restart: always
+    image: bear-sentinel
+    container_name: bear-sentinel
+    ports:
+      - 5003:5003
+
+  bear-codegen:
+    build:
+      context: ./bear-visual/bear-codegen
+    restart: always
+    container_name: bear-codegen
+    hostname: bear-codegen
+    image: bear-codegen
+
+  bear-job:
+    build:
+      context: ./bear-visual/bear-xxl-job-admin
+    restart: always
+    container_name: bear-job
+    hostname: bear-job
+    image: bear-job
+    ports:
+      - 5004:5004

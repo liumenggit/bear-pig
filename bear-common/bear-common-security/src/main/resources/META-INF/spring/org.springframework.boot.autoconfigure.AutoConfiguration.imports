@@ -1,0 +1,7 @@
+cc.wan7.bear.common.security.service.BearUserDetailsServiceImpl
+cc.wan7.bear.common.security.service.BearAppUserDetailsServiceImpl
+cc.wan7.bear.common.security.service.BearRedisOAuth2AuthorizationService
+cc.wan7.bear.common.security.service.BearRedisOAuth2AuthorizationConsentService
+cc.wan7.bear.common.security.component.BearSecurityInnerAspect
+cc.wan7.bear.common.security.component.BearSecurityMessageSourceConfiguration
+cc.wan7.bear.common.security.service.BearRemoteRegisteredClientRepository
