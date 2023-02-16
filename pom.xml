@@ -102,6 +102,7 @@
         <module>bear-visual</module>
 		<module>demo</module>
         <module>order</module>
+		<module>apis</module>
     </modules>
 
     <dependencyManagement>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~
+  ~      Copyright (c) 2018-2025, lengleng All rights reserved.
+  ~
+  ~  Redistribution and use in source and binary forms, with or without
+  ~  modification, are permitted provided that the following conditions are met:
+  ~
+  ~ Redistributions of source code must retain the above copyright notice,
+  ~  this list of conditions and the following disclaimer.
+  ~  Redistributions in binary form must reproduce the above copyright
+  ~  notice, this list of conditions and the following disclaimer in the
+  ~  documentation and/or other materials provided with the distribution.
+  ~  Neither the name of the bear4cloud.com developer nor the names of its
+  ~  contributors may be used to endorse or promote products derived from
+  ~  this software without specific prior written permission.
+  ~  Author: lengleng (wangiegie@gmail.com)
+  ~
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cc.wan7.bear.apis.mapper.ApisMapper">
+
+  <resultMap id="apisMap" type="cc.wan7.bear.apis.entity.Apis">
+    <id property="id" column="id"/>
+    <result property="apiNamespace" column="api_namespace"/>
+    <result property="apiName" column="api_name"/>
+    <result property="apiModules" column="api_modules"/>
+    <result property="apiTitle" column="api_title"/>
+    <result property="apiDesc" column="api_desc"/>
+    <result property="apiRequestParams" column="api_request_params"/>
+    <result property="apiResponseParams" column="api_response_params"/>
+    <result property="apiResponseExample" column="api_response_example"/>
+    <result property="isHideDoc" column="is_hide_doc"/>
+    <result property="requestMethod" column="request_method"/>
+    <result property="isDataApi" column="is_data_api"/>
+    <result property="apiCode" column="api_code"/>
+    <result property="apiFunctionCode" column="api_function_code"/>
+    <result property="apiDevMode" column="api_dev_mode"/>
+    <result property="databaseId" column="database_id"/>
+    <result property="databaseTableName" column="database_table_name"/>
+    <result property="isCurd" column="is_curd"/>
+    <result property="createTime" column="create_time"/>
+    <result property="createBy" column="create_by"/>
+    <result property="updateTime" column="update_time"/>
+    <result property="updateBy" column="update_by"/>
+  </resultMap>
+</mapper>
